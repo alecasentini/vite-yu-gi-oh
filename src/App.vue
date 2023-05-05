@@ -16,7 +16,7 @@ export default {
         }
     },
     created() {
-        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=5&offset=0')
+        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Alien')
             .then(res => {
                 console.log(res.data.data)
 
