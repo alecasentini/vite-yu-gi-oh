@@ -1,7 +1,12 @@
-<script setup>
+<script>
+export default {
+    name: "HeaderComp"
+}
 
 </script>
 
-<template></template>
+<template>
+    <h1>Yu-Gi-Oh Api</h1>
+</template>
 
-<style ></style>
+<style lang="scss" ></style>

@@ -1,7 +1,12 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComp from './components/HeaderComp.vue'
+
 </script>
 
-<template></template>
+<template>
+    <HeaderComp />
+</template>
 
-<style ></style>
+<style lang="scss">
+@use "./style/main.scss" as *;
+</style>
