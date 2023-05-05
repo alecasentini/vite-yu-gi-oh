@@ -13,9 +13,15 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <CardsComp />
-    </div>
+    <main class="w-100">
+        <div class="container">
+            <CardsComp />
+        </div>
+    </main>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+main {
+    background-color: goldenrod;
+}
+</style>
