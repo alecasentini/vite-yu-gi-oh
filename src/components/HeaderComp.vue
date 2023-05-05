@@ -7,7 +7,7 @@ export default {
 
 <template>
     <div id="header" class="d-flex w-100 align-items-center">
-        <img src="../../public/img/yugioh_logo.png" alt="">
+        <img src="../../public/img/yugioh_logo.png" alt="logo" class="ms-5">
         <h1 class="ms-3">Yu-Gi-Oh Api</h1>
     </div>
 </template>
