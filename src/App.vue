@@ -1,5 +1,6 @@
-<script setup>
+<script>
 import HeaderComp from './components/HeaderComp.vue'
+
 export default {
     name: "App",
     components: {
