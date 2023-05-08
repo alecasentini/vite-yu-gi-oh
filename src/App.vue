@@ -15,15 +15,16 @@ export default {
             store
         }
     },
-    created() {
-        axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Alien')
-            .then(res => {
-                console.log(res.data.data)
+    methods: {
+        selectChange() {
+            axios.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=${store.selectedArchetype}`)
+                .then(res => {
 
-                const datiApi = res.data.data
+                    const datiApi = res.data.data
 
-                this.store.arrayCards = datiApi
-            })
+                    this.store.arrayCards = datiApi
+                })
+        }
     }
 }
 </script>

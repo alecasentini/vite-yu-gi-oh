@@ -1,11 +1,16 @@
 <script>
 import axios from 'axios';
+import { store } from '../store';
 
 export default {
     name: "SelectArchetypeComp",
     data() {
         return {
-            archetypes: []
+            store,
+            archetypes: [],
+            // selectedArchetype: "",
+
+
         }
     },
     created() {
@@ -15,13 +20,27 @@ export default {
                     this.archetypes.push(res.data[i]);
                 }
             })
+    },
+    methods: {
+        selectChange() {
+
+            axios.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=${this.store.selectedArchetype}`)
+                .then(res => {
+
+                    const datiApi = res.data.data
+
+                    this.store.arrayCards = datiApi
+                })
+        }
     }
+
 }
 </script>
 
 <template>
-    <select class="form-select" aria-label="Default select example">
-        <option selected>Select Archetype</option>
+    <select class="form-select" aria-label="Default select example" v-model="this.store.selectedArchetype"
+        @change="selectChange">
+        <option selected value="">Select Archetype</option>
         <option v-for="archetype in archetypes" :value="archetype.archetype_name">{{ archetype.archetype_name }}</option>
 
     </select>
