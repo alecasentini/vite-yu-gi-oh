@@ -8,7 +8,6 @@ export default {
         return {
             store,
             archetypes: [],
-            // selectedArchetype: "",
 
 
         }
@@ -48,7 +47,7 @@ export default {
 
 <style lang="scss">
 select {
-    width: 200px !important;
+    width: 300px !important;
     margin: 30px auto !important;
 }
 </style>

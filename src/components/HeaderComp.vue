@@ -6,8 +6,8 @@ export default {
 </script>
 
 <template>
-    <div id="header" class="d-flex w-100 align-items-center">
-        <img src="../../public/img/yugioh_logo.png" alt="logo" class="ms-5">
+    <div id="header" class="d-flex w-100 align-items-center justify-content-center">
+        <img src="../../public/img/yugioh_logo.png" alt="logo">
         <h1 class="ms-3">Yu-Gi-Oh Api</h1>
     </div>
 </template>

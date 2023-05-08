@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <div class="d-flex flex-wrap justify-content-between bg-white">
+    <div class="d-flex flex-wrap bg-white">
         <SingleCardComp v-for="(elem, index) in store.arrayCards" :key="index" :dettagliCard="elem" />
     </div>
 </template>
