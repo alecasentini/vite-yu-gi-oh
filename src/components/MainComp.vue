@@ -1,12 +1,14 @@
 <script>
 import CardsComp from './CardsComp.vue'
 import CountCardComp from './CountCardComp.vue';
+import SelectArchetypeComp from './SelectArchetypeComp.vue';
 
 export default {
     name: "MainComp",
     components: {
         CardsComp,
-        CountCardComp
+        CountCardComp,
+        SelectArchetypeComp
     },
 
 
@@ -16,6 +18,8 @@ export default {
 
 <template>
     <main class="w-100 py-5">
+        <SelectArchetypeComp />
+
         <div class="container d-flex flex-column px-0">
             <CountCardComp />
             <CardsComp />
